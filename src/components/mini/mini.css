@@ -93,6 +93,13 @@
     text-align: center;
   }
 
+  .miniButton {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+}
+
+
 /* ============== Media Queries (Medium Devices) ============== */
 @media screen and (max-width: 1024px) {
     .mini__container {
@@ -117,18 +124,31 @@
 
 /* ============== Media Queries (Small Devices) ============== */
 @media screen and (max-width: 600px) {
-    .mini__me {
-        width: 65%;
-        margin: 0 auto 3rem;
-    }
-    .mini__cards {
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-    }
-    .mini__content {
-        text-align: center;
-    }
-    .mini__content p {
-        margin: 1.5rem 0;
-    }
+  .mini__container,
+  .mini__container.reverse {
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center the items */
+      justify-content: center; /* Ensure equal spacing */
+      text-align: center;
+      gap: 1rem; /* Adjust spacing as needed */
+      width: 100%; /* Ensure it spans full width */
+  }
+
+  .mini__me {
+      width: 80%; /* Adjust width */
+      margin: 0 auto; /* Center the element */
+  }
+
+  .mini__content,
+  .mini__content-box
+  .mini__container.reverse {
+      width: 100%; /* Ensure content takes up equal space */
+      display: flex;
+      max-width: 400px; /* Keep content balanced */
+  }
+
+  .miniButton {
+    display: flex;
+  }
 }

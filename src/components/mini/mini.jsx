@@ -27,12 +27,14 @@ const Mini = ({ title, subtitle, image, description, includes, extras, price, re
             <h4>NEED A LITTLE MORE?</h4>
             <p>{extras}</p>
             <h5>STARTING AT {price}</h5>
-          </div>
-          
-
-          <a href='#contact' className='btn btn-primary'>Inquire Now</a>
+            </div>
         </div>
       </div>
+
+      <div className='miniButton'>
+      <a href='#contact' className='btn btn-primary'>Inquire Now</a>
+      </div>
+
     </section>
   );
 };
