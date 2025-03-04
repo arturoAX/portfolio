@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.css'
-import ME from '../images/arts_removebg-preview.png'
+import ME from '../images/Arturo.png'
 import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { MdOutlineFolderCopy } from "react-icons/md";

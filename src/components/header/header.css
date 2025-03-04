@@ -1,5 +1,5 @@
 header {
-    height: 100vh;
+    height: 95vh;
     padding-top: 7rem;
     overflow: hidden;
 }
@@ -40,14 +40,15 @@ header {
 .me {
     background: linear-gradient(var(--color-primary), transparent);
     width: 23rem;
-    height: 25rem;
+    height: 23rem; /* Make width and height equal */
     position: absolute;
-    left: calc(50% - 11rem);
-    margin-top: 4rem;
-    border-radius: 12rem 12rem 0 0;
+    left: calc(49% - 11.5rem); /* Adjust centering */
+    margin-top: 8rem;
+    border-radius: 50%; /* Makes it a perfect circle */
     overflow: hidden;
-    padding: 5rem 1.5rem 1.5rem 1.5rem;
+    padding: 9rem 1.9rem 1.9rem 1.9rem;
 }
+
 
 /* ================== Scroll Down ================== */
 .scroll__down {
