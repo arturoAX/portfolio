@@ -1,0 +1,98 @@
+.testimonial-container {
+    position: relative;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+.testimonial {
+    background: var(--color-bg-variant, #f4f4f4);
+    padding: 2rem;
+    border-radius: 1rem;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.client__avatar {
+    width: 9rem;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    border: 0.3rem solid var(--color-primary-variant, #ff4b2b);
+}
+
+.client__avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the circle without distortion */
+}
+
+.client__review {
+    color: var(--color-light, #555);
+    font-weight: 300;
+    display: block;
+    width: 80%;
+    margin: 0.8rem auto 0;
+}
+
+/* Navigation buttons */
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 50%;
+}
+
+.prev-btn { left: -40px; }
+.next-btn { right: -40px; }
+
+.prev-btn:hover, .next-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Add to your existing CSS file */
+
+/* Style the swiper navigation arrows */
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--color-primary); /* Make the arrows stand out */
+  position: absolute;
+  top: 50%;  /* Position vertically centered by default */
+  transform: translateY(-50%); /* Correct the exact center alignment */
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+    .container .testimonial-container {
+        width: 60%;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .testimonial-container {
+        max-width: 90%;
+    }
+    .prev-btn, .next-btn {
+        font-size: 1rem;
+        padding: 6px;
+    }
+}
+
+/* For mobile screens */
+@media screen and (max-width: 600px) {
+    /* Move the arrows to the bottom center */
+    .swiper-button-next,
+    .swiper-button-prev {
+      top: unset; /* Remove the top positioning */
+      bottom: 10px; /* Place them near the bottom */
+      left: 50%;  /* Center horizontally */
+      transform: translateX(-50%); /* Align the arrows to the center */
+    }
+  }
