@@ -102,20 +102,30 @@
 
 /* ============== Media Queries (Medium Devices) ============== */
 @media screen and (max-width: 1024px) {
-    .mini__container {
-        grid-template-columns: 1fr;
-        gap: 0;
-    }
+  .mini__container {
+      display: flex;  /* Use flexbox */
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center align */
+      justify-content: center; /* Ensure equal spacing */
+      text-align: center;
+      gap: 2rem; /* Adjust spacing as needed */
+      width: 100%; /* Ensure it spans full width */
+  }
 
-    .mini__me {
-        width: 50%;
-        margin: 2rem auto 4rem;
-    }
+  .mini__me {
+      width: 50%;
+      margin: 2rem auto 4rem;
+  }
 
-    .mini__content p {
-        margin: 1rem 0 1.5rem;
-    }  
+  .mini__content {
+      width: 90%; /* Ensure content takes up equal space */
+  }
+
+  .mini__content p {
+      margin: 1rem 0 1.5rem;
+  }  
 }
+
 
 
   
@@ -143,7 +153,7 @@
   .mini__content,
   .mini__content-box
   .mini__container.reverse {
-      width: 100%; /* Ensure content takes up equal space */
+      width: 400%; /* Ensure content takes up equal space */
       display: flex;
       max-width: 400px; /* Keep content balanced */
   }
