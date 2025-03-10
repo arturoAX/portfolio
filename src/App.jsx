@@ -9,7 +9,7 @@ import Portfolio from './components/portfolio/portfolio'
 import Testimonials from './components/testimonials/testimonials'
 import Contact from './components/contact/contact'
 import Footer from './components/footer/footer'
-import MiniImage from './components/images/mini.png';
+import MiniImage from './components/images/JJK-2.jpg';
 import DeluxeImage from './components/images/HeXuan_3785.jpg';
 import ExperienceImage from './components/images/Carscar.png';
 import LUXURIOUSImage from './components/images/kda.jpg';

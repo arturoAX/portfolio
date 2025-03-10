@@ -48,14 +48,11 @@
 .mini-content-box {
     width: 95%;
     max-width: 1000px;
-    margin: 2rem auto;
     padding: 2rem;
     background-color: var(--color-bg-variant);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(58, 197, 232, 0.1);
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin-left: 2rem; /* Add space on the left side when reverse is applied */
+    line-height: 2.6;
   }
 
   .mini-content-box h2 {
@@ -102,28 +99,32 @@
 
 /* ============== Media Queries (Medium Devices) ============== */
 @media screen and (max-width: 1024px) {
-  .mini__container {
-      display: flex;  /* Use flexbox */
+  .mini__container,
+  .mini__container.reverse {
+      display: flex;
       flex-direction: column; /* Stack items vertically */
-      align-items: center; /* Center align */
+      align-items: center; /* Center the items */
       justify-content: center; /* Ensure equal spacing */
       text-align: center;
-      gap: 2rem; /* Adjust spacing as needed */
+      gap: 1rem; /* Adjust spacing as needed */
       width: 100%; /* Ensure it spans full width */
   }
 
   .mini__me {
-      width: 50%;
-      margin: 2rem auto 4rem;
+      width: 80%; /* Adjust width */
   }
 
-  .mini__content {
-      width: 90%; /* Ensure content takes up equal space */
+  .mini__content,
+  .mini__content-box
+  .mini__container.reverse {
+      width: 400%; /* Ensure content takes up equal space */
+      display: flex;
+      max-width: 400px; /* Keep content balanced */
   }
 
-  .mini__content p {
-      margin: 1rem 0 1.5rem;
-  }  
+  .miniButton {
+    display: flex;
+  }
 }
 
 
@@ -147,7 +148,6 @@
 
   .mini__me {
       width: 80%; /* Adjust width */
-      margin: 0 auto; /* Center the element */
   }
 
   .mini__content,
