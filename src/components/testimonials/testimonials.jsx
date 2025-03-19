@@ -8,7 +8,7 @@ import Neptune_lindsey from '../images/LindseyWithGoth.png';
 import Winterciphers from '../images/WindMaster.png';
 import Lunasilerius from '../images/Amy_3786.jpg';
 import Ocean_streets from '../images/CarGenshin.png';
-import Cosplay_tenk0 from '../images/Kimiko_3750.jpg';
+import Cosplay_tenk0 from '../images/Capture.jpg';
 
 
 
@@ -59,7 +59,7 @@ const testimonials = [
   {
     avatar: Cosplay_tenk0,
     name: 'Cosplay_tenk0',
-    review: 'Working with @arturo.photo8 on my Mechanic Kaveh cosplay was such an awesome experience! Arturo has a knack for capturing every detail, whether it’s the intricate design of the cosplay or the vibe of the character. These photos bring Kaveh to life in such a unique and stunning way, perfectly blending the mechanical elements with the character’s charm.'
+    review: 'Had such a great time shooting my Sonic cosplay with @arturo.photo8! He really knows how to capture movement and energy, making every shot feel so alive. The photos perfectly bring out Sonic’s speed and attitude, and I couldn’t be happier with how they turned out. Huge thanks to Arturo for making this vision a reality!'
   }
 
 ];
